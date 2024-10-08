@@ -36,6 +36,3 @@ def persentase_rugi(harga_beli, harga_jual):
         return print(f"{(rugi / harga_beli) * 100}%")
     else:
         return 0
-    
-
-persentase_rugi(50000, 25000)
