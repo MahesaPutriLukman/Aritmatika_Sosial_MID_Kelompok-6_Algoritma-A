@@ -16,6 +16,7 @@ pip install aritmatika
 ## Usage
 
 '''python
+
 from aritmatika.gaji import (
     hitung_gaji_pokok,
     hitung_gaji_bersih,
@@ -24,16 +25,16 @@ from aritmatika.gaji import (
     hitung_rata_rata_gaji
 )
 
-# return gaji_per_jam * jam_kerja
+'''return gaji_per_jam * jam_kerja'''
 gaji_pokok = hitung_gaji_pokok(gaji_per_jam, jam_kerja)
 
-# return gaji_pokok - potongan_pajak - potongan_bpjs - potongan_lain
+'''return gaji_pokok - potongan_pajak - potongan_bpjs - potongan_lain'''
 gaji_lembur = hitung_gaji_lembur(jam_lembur, tarif_lembur)
 
-# return jam_lembur * tarif_lembur
+'''return jam_lembur * tarif_lembur'''
 gaji_bersih = hitung_gaji_bersih(gaji_pokok, potongan_pajak, potongan_bpjs)
 
-# gaji_pokok + gaji_lembur + tunjangan
+'''gaji_pokok + gaji_lembur + tunjangan'''
 total_gaji = hitung_total_gaji(gaji_pokok, gaji_lembur, tunjangan)
 '''
 
