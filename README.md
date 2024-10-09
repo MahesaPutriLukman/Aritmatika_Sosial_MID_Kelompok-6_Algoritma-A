@@ -15,18 +15,27 @@ pip install aritmatika
 
 ## Usage
 
-python
-import foobar
+'''python
+from aritmatika.gaji import (
+    hitung_gaji_pokok,
+    hitung_gaji_bersih,
+    hitung_gaji_lembur,
+    hitung_total_gaji,
+    hitung_rata_rata_gaji
+)
 
-# returns 'words'
-foobar.pluralize('word')
+# return gaji_per_jam * jam_kerja
+gaji_pokok = hitung_gaji_pokok(gaji_per_jam, jam_kerja)
 
-# returns 'geese'
-foobar.pluralize('goose')
+# return gaji_pokok - potongan_pajak - potongan_bpjs - potongan_lain
+gaji_lembur = hitung_gaji_lembur(jam_lembur, tarif_lembur)
 
-# returns 'phenomenon'
-foobar.singularize('phenomena')
+# return jam_lembur * tarif_lembur
+gaji_bersih = hitung_gaji_bersih(gaji_pokok, potongan_pajak, potongan_bpjs)
 
+# gaji_pokok + gaji_lembur + tunjangan
+total_gaji = hitung_total_gaji(gaji_pokok, gaji_lembur, tunjangan)
+'''
 
 ## Contributing
 
