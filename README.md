@@ -1,4 +1,4 @@
-# Aritamtika
+# Aritmatika
 
 Aritmatika adalah package Python yang berfungsi untuk menyelesaikan masalah aritmatika sosial seperti untung dan rugi, bunga, pajak, diskon dan rabat, serta bruto, netto, dan tara.
 
